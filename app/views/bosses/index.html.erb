@@ -1,0 +1,19 @@
+<h1>Bosses#index</h1>
+<p>Find me in app/views/bosses/index.html.erb</p>
+
+<h2> Boss list </h2>
+
+
+<ul>
+<% @bosses.each do |boss| %>
+<li>
+  <%= boss.first_name %>
+  <%= boss.last_name %>
+
+</li>
+
+
+
+
+<% end %>
+</ul>

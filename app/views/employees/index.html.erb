@@ -1,0 +1,39 @@
+<h1>Employee#index</h1>
+<p>Find me in app/views/employee/index.html.erb</p>
+
+<h2> Employee List </h2>
+
+
+<ul>
+<% @employees.each do |employee| %>
+  <li>
+  <%= employee.full_name %>
+  <%= employee.highschool_grade %>
+  <%= employee.highschool_name %>
+  <%= employee.bio %>
+  <%= employee.driver_license %>
+
+</li>
+
+<%end%>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<!--<%= @employees.each do |employee| %>
+<ul>
+  <li><%= employee.first_name %></li>
+  <li><%= employee.last_name %></li>
+  <li><%= employee.highschool_grade %></li>
+  <li><%= employee.highschool_name %></li>
+  <li><%= employee.bio %></li>
+  <li><%= employee.driver_license %></li>
+</ul>
+<%end%> -->

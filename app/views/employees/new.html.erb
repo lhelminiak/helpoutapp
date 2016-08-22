@@ -1,0 +1,15 @@
+<h1>Employee#new</h1>
+
+<p>Find me in app/views/employee/new.html.erb</p>
+<%= simple_form_for @new_employee do |f| %>
+  <%= f.input :first_name%>
+  <%= f.input :last_name %>
+  <%= f.input :highschool_name %>
+  <%= f.input :highschool_grade %>
+  <%= f.input :bio %>
+
+  <%= f.input :driver_license, as: :boolean, checked_value: true, unchecked_value: false %>
+
+  <%= f.button :submit %>
+
+<% end %>

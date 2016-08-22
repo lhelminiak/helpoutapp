@@ -1,0 +1,12 @@
+<h1>Locations2#new</h1>
+<p>Find me in app/views/locations2/new.html.erb</p>
+
+<%= simple_form_for :new_location do |f| %>
+  <%= f.input :employee_id %>
+  <%= f.input :street_address %>
+  <%= f.input :city %>
+  <%= f.input :state_code %>
+  <%= f.input :zip_code %>
+  <%= f.button :submit %>
+
+<% end %>

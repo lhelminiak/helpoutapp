@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+
+
+  #devise_for :bosses
+  resources :employees, :bosses, :locations, :locations2
+
+  root "employees#new"
+
+  #root "bosses#new"
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
